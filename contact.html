@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: pink;
+}
+* {
+  box-sizing: border-box;
+}
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 30%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+/* Overwrite default styles of hr */
+hr {
+  border: 5px solid pink;
+  margin-bottom: 25px;
+}
+/* Set a style for the submit button */
+.registerbtn {
+  background-color:blue;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  opacity: 0.9;
+}
+.registerbtn:hover {
+  background-color: #45a049;
+  opacity: 2;
+}
+body{
+  background-color:skyblue; 
+}
+</style>
+</head>
+<body>
+
+<form action="action_page.php" method="post">
+  <div class="container">
+    <h1 align="center">Contact Form</h1>
+    <hr>
+
+    <p align="center"><label for="name"><b>Patient Name</b></label></p>
+    <p align="center"><input type="text" placeholder="name" name="name" required></p>
+    
+    <p align="center"><label for="name"><b>City</b></label></p>
+    <p align="center"><input type="text" placeholder="city" name="city" required>
+    
+    <p align="center"><label for="email"><b>Email</b></label></p>
+    <p align="center"><input type="text" placeholder="Enter Email" name="email" required></p>
+
+    <p align="center"><label for="email"><b>Phone no</b></label></p>
+    <p align="center"><input type="text" placeholder="Enter phone no" name="phone" required value=""></p>
+
+   <p align="center"> <label for="Gender"><b>Gender</b></label></p>          
+   <p align="center"><input type="text" placeholder="Enter gender" name="gender" required value=""></p>
+    
+<p align="center"><label for=""><b>Type Symptpms</b></label></p>
+<p align="center"><input type="text" placeholder="Enter symptoms" name="symptoms" required value=""></p>   
+
+
+<p align="center"><button type="submit" class="registerbtn">Submit</button></p>
+</div>
+
+<p align="center"> <a href="index.html" style="text-decoration:none" target="_blank">Preview Website</a></p>
+</form>
+</body>
+</html>
+
